@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <div class="flex ">
+        <!-- Left box  -->
+        <div class="left flex bg-black ">
+            <!-- close icon  -->
+
+            <img width="30px" class="close invert " src="assets/images/close.svg" alt="">
+
+
+
+
+
+            <div class="home flex bg-color rounded  p-1 m-1 ">
+                <div class="logo invert flex"><img src="assets/images/logo.svg" alt="logo">
+
+                </div>
+
+
+                <ul>
+                    <li><img src="assets/images/home2.svg" class="invert" alt="home"> Home</li>
+                    <li> <img src="assets/images/search.svg" class="invert" alt="search"> Search</li>
+                </ul>
+            </div>
+            <div class="library bg-color  rounded p-1 m-1 flex">
+                <div class="heading flex align-items">
+
+                    <img class="invert" src="assets/images/playlist.svg" alt="">
+                    <h3>Your library</h3>
+                    <img class="add" src="assets/images/add.png.png" alt="">
+                </div>
+                <!-- Song list section in library  -->
+                <div class="songlist">
+
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <!-- <div class="extrabox1 bg-grey  rounded p-1 m-1 flex">
+                    <h3>Create your first playlist</h3>
+                    <p>Its easy we will help you </p>
+                    <button>Create playlist</button>
+                </div>
+
+
+                <div class="extrabox2 bg-grey  rounded p-1 m-1 flex">
+                    <h3>Lets find some podcast to follow </h3>
+                    <p>we will keep you updated on new episodes </p>
+                    <button>Browse podcasts</button>
+
+
+                </div> -->
+                <!-- foooter links  -->
+                <div class="legal-links">
+                    <a href="https://www.spotify.com/pk-en/legal/">Legal</a>
+                    <a href="https://www.spotify.com/pk-en/safetyandprivacy/">Safety & Privacy Center</a>
+                    <a href="https://www.spotify.com/pk-en/legal/privacy-policy/">Privacy Policy</a>
+                    <a href="https://www.spotify.com/pk-en/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3">About Ads</a>
+                    <a href="https://www.spotify.com/pk-en/accessibility/">Accessibility</a>
+                    <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">Cookies</a>
+                </div>
+
+                <div class="engbtn invert flex align-items">
+                    <img src="assets/images/engbtn2.svg" alt="btnlogo">
+                    <button>English</button>
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Right box  -->
+        <div class="right bg-black m-1 rounded ">
+
+            <!-- header  -->
+            <div class="header">
+                <div class="nav flex">
+
+                    <div class="icons flex ">
+                        <img class="invert hamburger" src="assets/images/hamburger.svg" alt="">
+
+                        <img class="invert " src="assets/images/left-chevron.png" alt="" width="20px ">
+                        <img class="invert " src="assets/images/chevron.png" alt="" width="20px">
+
+                    </div>
+                    <div class="buttons">
+                        <button class="signupbtn ">Sign up</button>
+                        <button class="loginbtn">Login</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Songs Section -->
+            <div class="spotifyplaylist ">
+                <h1>Spotify Playlist</h1>
+
+                <div  class="cardcontainer flex ">
+                    <div data-folder="cs1"  class="card ">
+                        <img src="assets/images/pakistani.jpg" alt="">
+                        <h2>Pakistani OST Songs  </h2>
+                        <p>Rahat Fateh ,Samar Jafri,Alistair Alvin</p>
+                        <div class="playbtn">
+                            <img src="assets/images/playbtn2.jpg" alt="">
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 2nd card -->
+                    <div data-folder="cs2" class="card ">
+                        <img class="rounded" src="assets/images/slowedandreverb.jpg" alt="">
+                        <h2>Slowed And Reverb</h2>
+                        <p>Abdul Hanan , Arjeet Singh </p>
+                        <div class="playbtn">
+                            <img src="assets/images/playbtn2.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+                      <!-- 3rd card -->
+                    <div data-folder="cs3" class="card ">
+                        <img class="rounded" src="assets/images/lofi.jpg" alt="">
+                        <h2>Latest Lofi Songs</h2>
+                        <p>Beyan Band  Atif Aslam Arjeet Singh </p>
+                        <div class="playbtn">
+                            <img src="assets/images/playbtn2.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+                      <!-- 4th  card -->
+                    <div data-folder="cs4" class="card ">
+                        <img class="rounded" src="assets/images/mashup.jpg" alt="">
+                        <h2>Romantic Mashups -2025</h2>
+                        <p>Darshan Raval </p>
+                        <div class="playbtn">
+                            <img src="assets/images/playbtn2.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+
+                      <!-- 5th card -->
+                    <div data-folder="cs5" class="card ">
+                        <img class="rounded" src="assets/images/atifAslam.jpg" alt="">
+                        <h2>Atif Aslam Hits</h2>
+                        <p>Singer -Atif Aslam </p>
+                        <div class="playbtn">
+                            <img src="assets/images/playbtn2.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+                      <!-- 6th card -->
+                    <div data-folder="cs6" class="card ">
+                        <img class="rounded" src="assets/images/punjabi.jpg" alt="">
+                        <h2>Punjabi songs </h2>
+                        <p>Nimra Meher, Amrinder , Bilal Saeed </p>
+                        <div class="playbtn">
+                            <img src="assets/images/playbtn2.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+
+
+                         <!-- 7th  card -->
+                    <div data-folder="cs7" class="card ">
+                        <img class="rounded" src="assets/images/english.jpg" alt="">
+                        <h2>English Songs Hit Album-2023</h2>
+                        <p>info.....</p>
+                        <div class="playbtn">
+                            <img src="assets/images/playbtn2.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+
+                      <!-- 8th card -->
+                    <div data-folder="cs8" class="card ">
+                        <img class="rounded" src="assets/images/beast.jpg" alt="">
+                        <h2>English Beast Music Album </h2>
+                        <p>Motivational inspirational playlist </p>
+                        <div class="playbtn">
+                            <img src="assets/images/playbtn2.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+                      <!-- 9th card -->
+                    <div data-folder="cs9" class="card ">
+                        <img class="rounded" src="assets/images/mix.jpg" alt="">
+                        <h2>Mix Songs Playlist</h2>
+                        <p>Hanan ,Bilal ,Atif ,Pritam </p>x
+                        <div class="playbtn">
+                            <img src="assets/images/playbtn2.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+
+                         <!-- 10th card -->
+                    <div data-folder="cs10" class="card ">
+                        <img class="rounded" src="assets/images/pop.jpg" alt="">
+                        <h2>Pop Music Album </h2>
+                        <p>English Pop Music hit playlist </p>
+                        <div class="playbtn">
+                            <img src="assets/images/playbtn2.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+                <div class="playbar  rounded">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo">
+                            
+
+                        </div>
+
+                        <div class="songtime">
+
+                            
+                        </div>
+
+                          
+
+                    </div>
+
+                    <div class="songbuttons flex justifycontent ">
+                        <img id="previous" src="assets/images/previous.svg" alt="">
+                        <img id="play" src="assets/images/play.svg" alt="">
+                        <img id="next" src="assets/images/nextsong.svg" alt="">
+
+
+
+                         
+                    </div>
+
+    <div class="volume">
+            <img width="15" src="assets/images/volum.svg" alt="">
+            <div class="range ">
+                <input type="range" name="volume" id="">
+            </div>
+        </div>
+
+
+
+                   
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+  <div class="timevol">
+
+                       
+                        <div class="songtime">
+
+                        </div>
+                        <div class="volume">
+                            <img width="25" src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div> -->
